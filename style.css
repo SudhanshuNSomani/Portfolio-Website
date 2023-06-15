@@ -1,0 +1,105 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+    font-family: 'Be Vietnam Pro', sans-serif;
+
+    user-select: none;
+    --myBlack:#260101;
+    --darkOcean :#2A8C82;
+    --ocean:#2A8C82;
+    --lightOcean:#9BF2EA;
+    --grayOcean:#275950;
+
+
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+nav{
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem auto;
+    
+}
+.logo{
+    width: 160px;
+    cursor: pointer;
+    transform: scale(1);
+    transition: transform 0.8s ease-in-out;
+}
+.logo:hover{
+
+    transform: scale(1.04);
+    transition: transform 1s ease-in-out;
+}
+.sections{
+    width: 23%;
+    display: flex;
+    justify-content: space-between;
+}
+.sections a{
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: var(--myBlack);
+}
+.sections a:hover{
+    
+    font-weight:500;
+    transition: font-weight 0.8s;
+}
+
+.heading{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.heading h1{
+    font-family: 'Rochester', cursive;
+    font-size: 5rem;
+}
+
+.heading h2{
+    font-size: 2rem;
+    font-weight: 400;
+    margin-top: 1rem;
+}
+
+
+.about{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.description{
+    font-size: 1.5rem;
+    width: 60%;
+    margin-left: 400px;
+    position: relative;  
+    font-weight: 400;
+}
+
+.description::before{
+    content: "ABOUT ME";
+    position: absolute;
+    z-index: -1;
+    color: #e7e7e7;
+    font-size:450%;
+    top: -35px;
+    left: -200px;
+    font-weight: 600;
+}
